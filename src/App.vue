@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <div id="empty"></div>
+    <div class="title">
+      <img src="./assets/title.png" width="70%" />
+    </div>
     <app-main @save="saveImage = $event" />
     <transition name="el-zoom-in-top">
       <app-save
@@ -10,7 +12,7 @@
       />
     </transition>
     <footer class="copyright">
-      Developer: @BYR Team:xyToki, @XYSU(HC).Tech
+      Support by XYSU(HC).Tech
     </footer>
   </div>
 </template>
@@ -57,15 +59,15 @@ html {
   background-image: url(~@/assets/h5bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
 }
-#empty {
-  margin-top: 230px;
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 .copyright {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-top: 6px;
   text-align: center;
   color: #fff;
   font-size: 12px;
