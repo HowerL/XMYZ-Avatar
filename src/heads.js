@@ -1,83 +1,74 @@
-import n951 from "@/assets/head/rn951.png";
-import n952 from "@/assets/head/rn952.png";
-import n95 from "@/assets/head/rn95.png";
-import g1 from "@/assets/head/rg1.png";
-import g2 from "@/assets/head/rg2.png";
-import g3 from "@/assets/head/rg3.png";
-import n1 from "@/assets/head/n1.png";
-import n2 from "@/assets/head/n2.png";
-import n3 from "@/assets/head/n3.png";
-import n4 from "@/assets/head/n4.png";
-import n5 from "@/assets/head/n5.png";
-import n6 from "@/assets/head/n6.png";
+import empty from "@/assets/head/empty.png";
+import s1 from "@/assets/head/s1.png";
+import s2 from "@/assets/head/s2.png";
+import s3 from "@/assets/head/s3.png";
+import s4 from "@/assets/head/s4.png";
+import s5 from "@/assets/head/s5.png";
+import r1 from "@/assets/head/r1.png";
+import r2 from "@/assets/head/r2.png";
+import i1 from "@/assets/head/i1.png";
+import i2 from "@/assets/head/i2.png";
+import i3 from "@/assets/head/i3.png";
 
 export var heads = [
   {
-    src: n1,
-    preview: n1,
+    src: empty,
+    preview: empty,
     params: [0, 0, 512, 512],
   },
   {
-    src: n2,
-    preview: n2,
+    src: s1,
+    preview: s1,
     params: [0, 0, 512, 512],
   },
   {
-    src: n3,
-    preview: n3,
+    src: s2,
+    preview: s2,
     params: [0, 0, 512, 512],
   },
   {
-    src: n4,
-    preview: n4,
+    src: s3,
+    preview: s3,
     params: [0, 0, 512, 512],
   },
   {
-    src: n5,
-    preview: n5,
+    src: s4,
+    preview: s4,
     params: [0, 0, 512, 512],
   },
   {
-    src: n6,
-    preview: n6,
+    src: s5,
+    preview: s5,
+    params: [0, 0, 512, 512],
+  },
+  {
+    src: r1,
+    preview: r1,
+    params: [0, 0, 512, 512],
+  },
+  {
+    src: r2,
+    preview: r2,
     params: [0, 0, 512, 512],
   },
 ];
 export var icons = [
   {
-    src: g1,
-    preview: g1,
-    x: 40,
-    y: 40,
-  },
-  {
-    src: g2,
-    preview: g2,
+    src: i1,
+    preview: i1,
     x: 60,
     y: 40,
   },
   {
-    src: g3,
-    preview: g3,
-    x: 80,
-    y: 200,
+    src: i2,
+    preview: i2,
+    x: 256 - 75,
+    y: 256 - 75,
   },
   {
-    src: n95,
-    preview: n95,
-    x: 50,
-    y: 200,
-  },
-  {
-    src: n951,
-    preview: n951,
-    x: 50,
-    y: 200,
-  },
-  {
-    src: n952,
-    preview: n952,
-    x: 50,
-    y: 200,
+    src: i3,
+    preview: i3,
+    x: 512 - 240,
+    y: 40,
   },
 ];

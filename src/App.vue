@@ -3,6 +3,27 @@
     <div class="title">
       <img src="./assets/title.png" width="70%" />
     </div>
+    <el-dialog
+      title="我们的微信公众号"
+      :visible.sync="dialogVisible"
+      width="80%"
+      top="6vh"
+      center
+    >
+      <div style="text-align:center;">
+        <span>微信内长按二维码关注<br />或保存二维码至微信扫码关注。</span>
+        <img
+          src="@/assets/qr_xyhcxsh.png"
+          width="100%"
+          style="margin-top:8px;"
+        />
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="dialogVisible = false"
+          >我已关注</el-button
+        >
+      </span>
+    </el-dialog>
     <app-main @save="saveImage = $event" />
     <transition name="el-zoom-in-top">
       <app-save
@@ -12,7 +33,7 @@
       />
     </transition>
     <footer class="copyright">
-      Support by XYSU(HC).Tech
+      Supported by <span @click="dialogVisible = true">厦一海沧团学技术部</span>
     </footer>
   </div>
 </template>
@@ -25,6 +46,7 @@ export default {
   data() {
     return {
       saveImage: "",
+      dialogVisible: true,
     };
   },
   components: {
@@ -39,6 +61,9 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: mp-quote, -apple-system-font, BlinkMacSystemFont, Helvetica Neue,
+    PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Arial,
+    sans-serif !important;
 }
 #app,
 body,
@@ -64,13 +89,14 @@ html {
 .title {
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .copyright {
-  margin-top: 6px;
+  margin-top: 8px;
+  margin-bottom: 20px;
   text-align: center;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 </style>
